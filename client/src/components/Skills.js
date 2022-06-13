@@ -15,14 +15,14 @@ export default function Skills() {
                     <h1 className="text-borders">
                         <span className="heading">
                             Short introduction to my technical skills: I have
-                            recently gained experience as{" "}
+                            experience as{" "}
                             <span className="span-text">
                                 Full-Stack Software Developer
                             </span>
                             . I am capable of planning, designing, and
                             developing the frontend and the backend of modern
                             web based applications. From the server side, i
-                            master the terms of{" "}
+                            master terms like{" "}
                             <span className="span-text">
                                 Single Page Applications (SPA),
                             </span>{" "}
@@ -133,6 +133,12 @@ export default function Skills() {
                                     <li>
                                         <SkillItem text={"SuperTest"} />
                                     </li>
+                                    <li>
+                                        <SkillItem
+                                            text={"npm"}
+                                            img_name={"npm"}
+                                        />
+                                    </li>
                                 </ul>
                             </div>
                             <div className="col-md-6 skill-box ">
@@ -150,6 +156,12 @@ export default function Skills() {
                                         <SkillItem
                                             text={"vanilla Javascript"}
                                             img_name={"javascript"}
+                                        />
+                                    </li>
+                                    <li>
+                                        <SkillItem
+                                            text={"jQuery"}
+                                            img_name={"jquery"}
                                         />
                                     </li>
                                     <li>
@@ -264,6 +276,48 @@ export default function Skills() {
                                 </ul>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div className=" container-fluid row justify-content-center ">
+                {" "}
+                <div className="col-md-5 skill-box box ">
+                    {" "}
+                    <p
+                        style={{
+                            fontSize: "28px",
+                            fontWeight: "500",
+                        }}
+                    >
+                        Softwares and Technologies
+                    </p>
+                    <div className="d-flex justify-content-around">
+                        <ul className="list-skills ">
+                            <li>
+                                <SkillItem
+                                    img_name={"linux"}
+                                    text={"Linux, bash, shell"}
+                                />
+                            </li>
+                            <li>
+                                {" "}
+                                <SkillItem
+                                    img_name={"github"}
+                                    text={"Github"}
+                                />
+                            </li>
+                            <li>
+                                {" "}
+                                <SkillItem img_name={"aws"} text={"AWS"} />
+                            </li>
+                            <li>
+                                {" "}
+                                <SkillItem
+                                    img_name={"heroku"}
+                                    text={"Heroku"}
+                                />
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

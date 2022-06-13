@@ -4,6 +4,7 @@ import About from "./About";
 import Experience from "./Experience";
 import Skills from "./Skills";
 import Projects from "./Projects";
+import ContactForm from "./ContactForm";
 
 function getDate() {
     var aestTime = new Date();
@@ -71,10 +72,66 @@ export default function Content() {
             <Skills />
             <Projects />
             <footer>
-                {" "}
-                <p style={{ color: "white" }} id="date">
-                    Today: {dateString}
-                </p>
+                <div className="container-fluid row">
+                    <div
+                        style={{ marginBottom: "30px" }}
+                        className="col-md-4"
+                        id="date"
+                    >
+                        <p style={{ color: "white" }}>
+                            This is a SPA dynamic web page, built with Node.js &
+                            Express, using React & Bootstrap for the frontend.
+                            Code can be found{" "}
+                            <a
+                                style={{ color: "white" }}
+                                target="_blank"
+                                href="https://github.com/domingud8/portfolio"
+                            >
+                                here
+                            </a>
+                            .{" "}
+                        </p>
+                        <p style={{ color: "white" }}> {dateString}</p>
+                    </div>
+                    <div style={{ marginBottom: "50px" }} className="col-md-6">
+                        {" "}
+                        <ContactForm />{" "}
+                    </div>
+                    <div
+                        style={{ marginBottom: "30px" }}
+                        className="col-md-2 d-flex justify-content-center align-items-center"
+                    >
+                        <a target="_blank" href="https://github.com/domingud8">
+                            <img
+                                style={{
+                                    marginRight: "8px",
+                                    marginTop: "0",
+                                    paddingTop: "0",
+                                    width: "80px",
+                                    height: "80px",
+                                }}
+                                src="icons8_skills/github2.png"
+                                className="social-media-img"
+                            />
+                        </a>
+                        <a
+                            target="_blank"
+                            href="https://linkedin.com/in/domingud8"
+                        >
+                            <img
+                                style={{
+                                    marginRight: "8px",
+                                    marginTop: "0",
+                                    paddingTop: "0",
+                                    width: "80px",
+                                    height: "80px",
+                                }}
+                                src="icons8_skills/linkedin.png"
+                                className="social-media-img"
+                            />
+                        </a>
+                    </div>
+                </div>
             </footer>
         </div>
     );

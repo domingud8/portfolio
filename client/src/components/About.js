@@ -4,7 +4,7 @@ import Carousel from "react";
 const items_description = [
     {
         jobTitle: "Full-Stack Software Developer",
-        text: `I am full stack Software Developer with strong programming skills in Python and Javascript. Additionally, my background in Data Science allows me to be confidently looking and dealing with data from different perspectives. I am specially interested on developing DS driven products`,
+        text: `I am full stack Software Developer with strong programming skills in Python and Javascript. Additionally, my background in Data Science allows me to be confident looking and dealing with data from different perspectives. I am specially interested on developing DS driven products`,
     },
     {
         images: ["cms.png", "cern.png"],
