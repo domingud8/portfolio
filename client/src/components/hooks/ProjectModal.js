@@ -6,6 +6,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 export default function ProjectModal(props) {
+    const path = "icons8_skills/" + props.deploySite + ".png";
     return (
         <Modal
             {...props}
@@ -14,34 +15,98 @@ export default function ProjectModal(props) {
             centered
         >
             <Modal.Header closeButton>
-                <Modal.Title id="contained-modal-title-vcenter">
+                <Modal.Title
+                    style={{ color: "#3f0f64" }}
+                    id="contained-modal-title-vcenter"
+                >
                     {props.title}
                 </Modal.Title>
             </Modal.Header>
-            <Modal.Body>
+            <Modal.Body style={{ color: "#3f0f64", fontSize: "22px" }}>
                 <Container>
                     <Row>
                         <Col xs={12} md={8}>
-                            .col-xs-12 .col-md-8
                             <p> {props.extended} </p>
+                            {props.features ? (
+                                <p>
+                                    {" "}
+                                    Features:
+                                    <ul>
+                                        {props.features.map(
+                                            (feature, index) => (
+                                                <li key={index}> {feature}</li>
+                                            )
+                                        )}
+                                    </ul>
+                                </p>
+                            ) : (
+                                ""
+                            )}
                             <Button type="button" className="btn btn-primary ">
                                 <a
                                     className="btn btn-primary"
                                     href={props.github}
                                     role="button"
+                                    target="_blank"
                                 >
-                                    <i
-                                        style={{ width: "100" }}
-                                        className="fa fa-github fa-3x "
-                                    ></i>
-                                    Source Code
+                                    Source Code in Github
                                 </a>
                             </Button>
                         </Col>
                         <Col xs={6} md={4}>
-                            .col-xs-6 .col-md-4
-                            <p>Features</p>
-                            <p>Library & Frameworks</p>
+                            {props.technologies ? (
+                                <p>
+                                    {" "}
+                                    <p>Libraries & Frameworks:</p>
+                                    <ul className="list-skills ">
+                                        {props.technologies.map(
+                                            (tech, index) => (
+                                                <li key={index}>
+                                                    {" "}
+                                                    <div className="feature-item">
+                                                        {" "}
+                                                        {tech}
+                                                    </div>
+                                                </li>
+                                            )
+                                        )}
+                                    </ul>
+                                </p>
+                            ) : (
+                                ""
+                            )}
+                            {props.deploySite ? (
+                                <div>
+                                    <p>Deployed on:</p>{" "}
+                                    <div className="feature-item  d-flex flex-row justify-content-center align-items-center">
+                                        <div>
+                                            <img
+                                                style={{
+                                                    marginRight: "8px",
+                                                    marginTop: "0",
+                                                    paddingTop: "0",
+                                                    maxWidth: "100px",
+                                                    maxHeight: "100px",
+                                                }}
+                                                src={path}
+                                            />
+                                        </div>
+                                        <div>
+                                            {props.deploySite}
+
+                                            <a
+                                                target="_blank"
+                                                href={props.projectUrl}
+                                            >
+                                                {" "}
+                                                link
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            ) : (
+                                ""
+                            )}
                         </Col>
                     </Row>
                 </Container>

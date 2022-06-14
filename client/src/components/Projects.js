@@ -4,21 +4,21 @@ import projects from "./data/projects_data";
 
 export default function Projects() {
     return (
-        <div
-            className="contentSection d-flex flex-column "
-            id="projects"
-            style={{ height: 1800 }}
-        >
+        <div className="contentSection d-flex flex-column " id="projects">
             <div className="section-title d-flex flex-column justify-content-center">
                 <div className="d-flex justify-content-center">
                     <hr className="line-separation" />
                 </div>
 
-                <h2>Projects</h2>
+                <h2 style={{ marginBottom: "50px" }}>Personal Projects</h2>
 
-                <div className="container d-flex flex-row ">
+                <div className="container-fluid d-flex flex-wrap ">
                     {projects.map((project, index) => (
-                        <div className="col-md-4 project-card" key={index}>
+                        <div
+                            style={{ marginRight: "70px", marginLeft: "70px" }}
+                            className="col-md-3 project-card"
+                            key={index}
+                        >
                             <ProjectCard {...project} />
                         </div>
                     ))}
