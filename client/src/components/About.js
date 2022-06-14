@@ -56,7 +56,11 @@ export default function About() {
         );
     }, [carouselItems]);
     return (
-        <div className="contentSection d-flex flex-column" id="about">
+        <div
+            style={{ marginTop: "150px" }}
+            className="contentSection d-flex flex-column"
+            id="about"
+        >
             <div className="container-fluid row">
                 {" "}
                 <div className="col-md-4 profile-photo d-flex justify-content-center align-items-center">
