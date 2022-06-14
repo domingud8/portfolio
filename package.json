@@ -20,6 +20,7 @@
     "bugs": {
         "url": "https://github.com/domingud8/portfolio/issues"
     },
+    "homepage": ".",
     "engines": {
         "node": "14"
     },
