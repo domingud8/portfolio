@@ -10,7 +10,9 @@ const path = require("path");
 const cookieSession = require("cookie-session");
 
 app.use(compression());
+
 app.use(express.static(path.join(__dirname, "..", "client", "public")));
+
 app.use(express.json());
 app.use(
     cookieSession({
