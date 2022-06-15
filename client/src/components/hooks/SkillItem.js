@@ -1,5 +1,5 @@
 export default function SkillItem({ text, img_name }) {
-    const path = img_name + ".png";
+    const path = "./" + img_name + ".png";
     return (
         <div className="skill-item d-flex flex-row justify-content-center align-items-center">
             <div>

@@ -18,6 +18,7 @@ export default function ProjectCard({
         <div className="container-fluid column ">
             <div style={{ marginBottom: "20px" }} className="col-md-12 mb-6">
                 <img
+                    style={{ maxHeight: "200px" }}
                     className="img-fluid  border  border-3 rounded h-50 mb-6 "
                     src={image}
                     alt={`Screenshot from ${title}`}
