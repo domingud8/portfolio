@@ -1,0 +1,5 @@
+node_modules
+client/public/*
+secrets.json
+# Local Netlify folder
+.netlify

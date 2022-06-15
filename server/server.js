@@ -26,10 +26,13 @@ app.use(express.json());
 
 let user = "";
 let pass = "";
+
 if (process.env.USER & process.env.PASS) {
+    console.log("here inside");
     user = process.env.USER;
     pass = process.env.PASS;
 } else {
+    console.log("here");
     const { USER, PASS } = require("../secrets.json");
     console.log(USER, PASS);
     user = USER;
