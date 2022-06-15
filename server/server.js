@@ -26,8 +26,8 @@ app.use(express.json());
 
 let user = "";
 let pass = "";
-console.log("here out", process.env.USER, process.env.PASS);
-if (process.env.USER && process.env.PASS) {
+console.log("here out flie change", process.env.USER, process.env.PASS);
+if (process.env.USER) {
     console.log("here inside");
     user = process.env.USER;
     pass = process.env.PASS;
