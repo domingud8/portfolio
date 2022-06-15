@@ -6,7 +6,7 @@ const projects = [
         github: "https://github.com/domingud8/portfolio",
         extended:
             "This portfolio dynamic website. API routes done with Node.js, while the frontend using React framework.",
-        image: "/projects/portfolio.jpg",
+        image: "portfolio.jpg",
         projectUrl: "https://",
         technologies: ["React", "Bootstrap", "Node.js"],
     },
@@ -17,7 +17,7 @@ const projects = [
         github: "https://github.com/domingud8/FinanceDashboard",
         extended:
             "This portfolio dynamic website. API routes done with Node.js, while the frontend using React framework.",
-        image: "/projects/imageDashboard.jpg",
+        image: "imageDashboard.jpg",
         projectUrl: "https://",
         technologies: ["React", "Bootstrap", "Node.js", "PostgreSQL"],
     },
@@ -29,7 +29,7 @@ const projects = [
         github: "https://github.com/domingud8/FinanceDashboard",
         extended:
             "This portfolio dynamic website. API routes done with Node.js, while the frontend using React framework.",
-        image: "/projects/twitterApi.jpg",
+        image: "twitterApi.jpg",
         projectUrl: "https://",
         technologies: ["AJAX", "vanilla Javascript"],
     },
@@ -39,7 +39,7 @@ const projects = [
         github: "https://github.com/domingud8/FinanceDashboard",
         extended:
             "This portfolio dynamic website. API routes done with Node.js, while the frontend using React framework.",
-        image: "/projects/yahooFinace.png",
+        image: "yahooFinace.png",
         projectUrl: "https://",
         technologies: ["AJAX", "vanilla Javascript"],
     },
@@ -50,7 +50,7 @@ const projects = [
         github: "https://github.com/domingud8/FinanceDashboard",
         extended:
             "I built this web application as a project during the boot camp at SPICED Academy. It is a single page application containing a social network where people can connect and perform  live chat. ",
-        image: "/projects/socialNetwork.jpg",
+        image: "socialNetwork.jpg",
         projectUrl: "https://",
         technologies: [
             "React",
@@ -78,7 +78,7 @@ const projects = [
         github: "https://github.com/domingud8/FinanceDashboard",
         extended:
             "This portfolio dynamic website. API routes done with Node.js, while the frontend using React framework.",
-        image: "/projects/imageBoard.jpg",
+        image: "imageBoard.jpg",
         projectUrl: "https://",
         technologies: ["Vue.js", "Node.js", "PostgreSQL", "AWS3"],
     },
@@ -88,7 +88,7 @@ const projects = [
         github: "https://github.com/domingud8/FinanceDashboard",
         extended:
             "This portfolio dynamic website. API routes done with Node.js, while the frontend using React framework.",
-        image: "/projects/connect4.jpg",
+        image: "connect4.jpg",
         projectUrl: "https://",
         technologies: ["AJAX", "vanilla Javascript"],
     },
