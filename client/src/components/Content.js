@@ -110,7 +110,7 @@ export default function Content() {
                                     width: "80px",
                                     height: "80px",
                                 }}
-                                src="icons8_skills/github2.png"
+                                src="github2.png"
                                 className="social-media-img"
                             />
                         </a>
@@ -126,7 +126,7 @@ export default function Content() {
                                     width: "80px",
                                     height: "80px",
                                 }}
-                                src="icons8_skills/linkedin.png"
+                                src="linkedin.png"
                                 className="social-media-img"
                             />
                         </a>
