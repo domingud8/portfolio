@@ -370,11 +370,17 @@ nav ul li > .list-nav {
     font-size: 32px;
 }
 
+.span-text1 {
+    color: rgb(77, 3, 3);
+    font-weight: 600;
+    font-size: 24px;
+}
+
 hr.line-separation {
     border: 10px solid var(--main-color);
     width: 50%;
     border-radius: 5px;
-    margin-bottom: 50px;
+    margin-bottom: 50px !important;
 }
 
 footer {

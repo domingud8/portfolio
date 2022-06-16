@@ -33,105 +33,168 @@ export default function Experience() {
             cardTitle: "DESY, Hamburg, Germany",
             cardSubtitle: "Data Scientist, Junior Researcher",
         },
+        {
+            title: "Sept 2014 - December 2015",
+            cardTitle: "Havana University, Habana, Cuba",
+            cardSubtitle: "Teaching assistant, Junior Researcher",
+        },
     ];
+
+    const [isMore, setIsMore] = useState(false);
+    useEffect(() => {
+        console.log(isMore);
+    }, [isMore]);
+
+    function changeButtonText() {
+        setIsMore(!isMore);
+    }
     return (
         <div className="contentSection container-fluid row" id="experience">
             <div className="d-flex justify-content-center  ">
                 <hr className="line-separation" />
             </div>
-            <div className="col-md-6 chrono section-title d-flex flex-column justify-content-between">
-                <h2> Education</h2>
-                <div>
-                    <Chrono
-                        items={eductation_data}
-                        theme={{
-                            primary: "var(--main-color)",
-                            secondary: "white",
-                            cardBgColor: "white",
-                            cardForeColor: "black",
-                            titleColor: "var(--main-color)",
-                        }}
-                        mode="VERTICAL"
-                        scrollable={{ scrollbar: false }}
-                    ></Chrono>
+            <h2 style={{ marginBottom: "50px" }}>My Path</h2>
+            <div className="container row" style={{ marginBottom: "100px" }}>
+                <div className="col-md-6 chrono section-title d-flex flex-column justify-content-between">
+                    <h2> Education</h2>
+                    <div style={{ height: "60vh" }}>
+                        <Chrono
+                            items={eductation_data}
+                            theme={{
+                                primary: "var(--main-color)",
+                                secondary: "white",
+                                cardBgColor: "white",
+                                cardForeColor: "black",
+                                titleColor: "var(--main-color)",
+                            }}
+                            mode="VERTICAL"
+                            scrollable={{ scrollbar: true }}
+                        ></Chrono>
+                    </div>
                 </div>
-            </div>
-            <div className="col-md-6 chrono section-title d-flex flex-column justify-content-between ">
-                <h2> Work Experience </h2>
+                <div className="col-md-6 chrono section-title d-flex flex-column justify-content-between ">
+                    <h2> Work Experience </h2>
 
-                <div>
-                    <Chrono
-                        items={items}
-                        theme={{
-                            primary: "var(--main-color)",
-                            secondary: "white",
-                            cardBgColor: "white",
-                            cardForeColor: "black",
-                            titleColor: "var(--main-color)",
-                        }}
-                        mode="VERTICAL"
-                        scrollable={{ scrollbar: false }}
-                        cardHeight="50px"
-                    >
-                        <div> Maternity Leave</div>
-                        <div className="list-phd-actions">
-                            <ul>
-                                <li>
-                                    Accomplishment, under time pressure, of a
-                                    complex data-driven predictive analysis
-                                    using{" "}
-                                    <span className="span-text">
-                                        {" "}
-                                        Big Data{" "}
-                                    </span>{" "}
-                                    at CERN. The analysis framework was
-                                    developed in{" "}
-                                    <span className="span-text">
-                                        {" "}
-                                        Python{" "}
-                                    </span>{" "}
-                                    & <span className="span-text">C++ </span>
-                                    and uses{" "}
-                                    <span className="span-text">
-                                        Machine Learning
-                                    </span>{" "}
-                                    techniques for signal recognition of t
-                                    <span
-                                        style={{ textDecoration: "overline" }}
-                                    >
-                                        t
-                                    </span>{" "}
-                                    events in the boosted regime{" "}
-                                    <a
-                                        style={{
-                                            textDecoration: "none",
-                                            color: "var(--main-color)",
-                                        }}
-                                        href="https://bib-pubdb1.desy.de/record/438672/files/Daniela_Dominguez_Damiani_Thesis_neu.pdf"
-                                    >
-                                        (link to publication)
-                                    </a>
-                                    .
-                                </li>
-                                <li>
-                                    Development and updatement of several
-                                    modules in Python and C++ of the statistical
-                                    analysis framework for performing
-                                    data-driven predictive analysis{" "}
-                                </li>
-                                <li>
-                                    Active participation in workshops and
-                                    international conferences in order to
-                                    present results.
-                                </li>
-                                <li>
-                                    Mentoring activities, tutoring students on
-                                    their projects during the Summer Student
-                                    Program at DESY.
-                                </li>
-                            </ul>
-                        </div>
-                    </Chrono>
+                    <div style={{ fontSize: "22px", height: "60vh" }}>
+                        <Chrono
+                            items={items}
+                            theme={{
+                                primary: "var(--main-color)",
+                                secondary: "white",
+                                cardBgColor: "white",
+                                cardForeColor: "black",
+                                titleColor: "var(--main-color)",
+                            }}
+                            mode="VERTICAL"
+                            scrollable={{ scrollbar: true }}
+                            cardHeight="50px"
+                        >
+                            <div> Maternity Leave</div>
+
+                            <div>
+                                Member of the CMS Experiment at CERN (based at
+                                DESY) working on data analysis.
+                                <div className="panel-group">
+                                    <div className="panel panel-default">
+                                        <div
+                                            style={{ textAlign: "center" }}
+                                            className="panel-heading"
+                                        >
+                                            <h4 className="panel-title">
+                                                <a
+                                                    className="btn btn-default"
+                                                    role="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#collapse1"
+                                                    onClick={() => {
+                                                        changeButtonText();
+                                                    }}
+                                                >
+                                                    {isMore
+                                                        ? "Read less"
+                                                        : "Read more"}{" "}
+                                                    &raquo;
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div
+                                            id="collapse1"
+                                            className="panel-collapse collapse"
+                                        >
+                                            <ul className="list-phd-actions">
+                                                <li>
+                                                    Accomplishment of a complex
+                                                    data-driven predictive
+                                                    analysis using{" "}
+                                                    <span className="span-text1">
+                                                        {" "}
+                                                        Big Data{" "}
+                                                    </span>{" "}
+                                                    at CERN. The analysis
+                                                    framework was developed in{" "}
+                                                    <span className="span-text1">
+                                                        {" "}
+                                                        Python{" "}
+                                                    </span>{" "}
+                                                    &{" "}
+                                                    <span className="span-text1">
+                                                        C++{" "}
+                                                    </span>
+                                                    and uses{" "}
+                                                    <span className="span-text1">
+                                                        Machine Learning
+                                                    </span>{" "}
+                                                    techniques for signal
+                                                    recognition of t
+                                                    <span
+                                                        style={{
+                                                            textDecoration:
+                                                                "overline",
+                                                        }}
+                                                    >
+                                                        t
+                                                    </span>{" "}
+                                                    events in the boosted regime{" "}
+                                                    <a
+                                                        style={{
+                                                            textDecoration:
+                                                                "none",
+                                                            color: "var(--main-color)",
+                                                        }}
+                                                        href="https://bib-pubdb1.desy.de/record/438672/files/Daniela_Dominguez_Damiani_Thesis_neu.pdf"
+                                                    >
+                                                        (link to publication)
+                                                    </a>
+                                                    .
+                                                </li>
+                                                <li>
+                                                    Development and updatement
+                                                    of several modules in Python
+                                                    and C++ of the statistical
+                                                    analysis framework for
+                                                    performing data-driven
+                                                    predictive analysis{" "}
+                                                </li>
+                                                <li>
+                                                    Active participation in
+                                                    workshops and international
+                                                    conferences in order to
+                                                    present results.
+                                                </li>
+                                                <li>
+                                                    Mentoring activities,
+                                                    tutoring students on their
+                                                    projects during the Summer
+                                                    Student Program at DESY.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div> </div>
+                        </Chrono>
+                    </div>
                 </div>
             </div>
         </div>

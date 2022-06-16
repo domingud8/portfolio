@@ -13,7 +13,7 @@ export default function Navi({ activeLink, handleChangeLink }) {
         },
 
         {
-            name: "Education & Work Experience",
+            name: "My Path",
             link: "#experience",
             id: "experience",
         },
