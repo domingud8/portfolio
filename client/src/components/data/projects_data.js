@@ -74,23 +74,30 @@ const projects = [
     {
         title: "Image Board ",
         description:
-            "Platform to upload pictures. Other users are able to place comments in specific pictures they want.",
-        github: "https://github.com/domingud8/FinanceDashboard",
+            "Platform that allows users to upload and comment images. Using AWS3  for storaging images. ",
+        github: "https://github.com/domingud8/ImageBoard",
         extended:
-            "This portfolio dynamic website. API routes done with Node.js, while the frontend using React framework.",
+            "This is a Single Page Web Application that allows users to upload pictues to general board, as well as comment their own pictures of pictures submited for someone else. This app was a project during the bootcamp at SPICED Acedemy.",
         image: "imageBoard.jpg",
-        projectUrl: "https://",
-        technologies: ["Vue.js", "Node.js", "PostgreSQL", "AWS3"],
+        projectUrl: "https://loadingimages.herokuapp.com/",
+        technologies: ["Vue.js", "Node.js", "Express.js", "PostgreSQL", "AWS3"],
+        deploySite: ["heroku"],
+        features: ["Upload images", "Display and comment exsisting images"],
     },
     {
         title: "Connect Four ",
-        description: "Game Connect 4",
-        github: "https://github.com/domingud8/FinanceDashboard",
+        description: "Game Connect Four",
+        github: "https://github.com/domingud8/domingud8.github.io/tree/master/Connect4",
         extended:
-            "This portfolio dynamic website. API routes done with Node.js, while the frontend using React framework.",
+            "This is a two-plaxer game cheking the horizontal, vertical and diagonal victory. Players take turns dropping one disc vertically in specific column. The goal for winning the game is to form a horizontal, vertical or diagonal line with owns discs,",
         image: "connect4.jpg",
-        projectUrl: "https://",
-        technologies: ["AJAX", "vanilla Javascript"],
+        projectUrl: "https://domingud8.github.io/Connect4/",
+        technologies: ["jQuerry", "vanilla Javascript"],
+        deploySite: ["github"],
+        features: [
+            "When a player wins, a message appears to announce the victory. ",
+            "At the moment of the victory the four discs have an animation to indicate where was the victory.",
+        ],
     },
 ];
 

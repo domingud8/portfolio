@@ -59,7 +59,7 @@ export default function Navi({ activeLink, handleChangeLink }) {
                 ${scrollPosition != 0 ? "scrolled" : ""}`}
         >
             <div className="container-fluid">
-                <p className="navbar-header mb-01 h4 text-uppercase ">
+                <p className="responsive-font-Name navbar-header mb-01 h4 text-uppercase ">
                     Daniela Dominguez Damiani
                 </p>
 

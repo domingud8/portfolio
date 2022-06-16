@@ -117,23 +117,34 @@ nav ul li > .list-nav {
 }
 
 .carousel {
-    max-width: 100%;
+    width: 100%;
     box-shadow: 0 20px 20px rgb(14, 14, 61);
     border-radius: 40px;
-    min-height: 400px;
-    min-width: 100%;
+    min-height: 55vh;
 }
 
+.carousel > ul {
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 20px;
+}
 @media screen and (max-width: 600px) {
     .carousel {
-        min-height: 1000px;
+        min-height: 50vh !important;
+        padding: 10px;
+        padding: 20px;
     }
     .card {
-        padding: 20px !important;
-        margin: 5px !important;
+        padding: 10px !important;
+        margin: 0 !important;
+        padding-top: 20px !important;
+        padding-bottom: 30px !important;
     }
     .card > p {
-        font-size: 18px !important;
+        font-size: 4vw !important;
+    }
+    .job-title {
+        font-size: 4.5vw !important;
     }
 }
 
@@ -150,14 +161,14 @@ nav ul li > .list-nav {
 }
 
 .card > p {
-    font-size: 26px;
+    font-size: 1.8vw;
     color: rgb(14, 14, 61);
 }
 
 .job-title {
     color: var(--main-color);
     font-weight: 600;
-    font-size: 26px;
+    font-size: 2vw;
     padding-bottom: 20px;
 }
 .prev {
@@ -277,9 +288,12 @@ nav ul li > .list-nav {
 /* *************************** */
 
 #skills {
-    padding-top: 100px;
     text-align: center;
-    margin-bottom: 100px;
+
+    background-color: var(--main-color);
+    min-height: 100vh;
+    color: white;
+    padding-bottom: 100px;
 }
 
 .skill-box {
@@ -287,6 +301,8 @@ nav ul li > .list-nav {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
     padding: 20px;
     margin-bottom: 30px;
+    background-color: white;
+    color: rgb(77, 3, 3);
 }
 
 .box:hover {
@@ -334,16 +350,17 @@ nav ul li > .list-nav {
 
 .text-borders {
     padding: 1em;
-    border: 0.25em solid var(--main-color);
+    border: 0.25em solid white;
     position: relative;
     font-size: 25px;
+    color: white;
 }
 .text-borders::before,
 .text-borders::after {
     content: "";
     display: block;
     position: absolute;
-    background: #fff;
+    background: var(--main-color);
 }
 .text-borders::before {
     top: -0.3em;
@@ -363,11 +380,13 @@ nav ul li > .list-nav {
     line-height: 1.5;
 
     letter-spacing: 1px;
+    font-size: 30px;
 }
 
 .span-text {
-    color: var(--main-color);
+    color: rgb(77, 3, 3);
     font-weight: 700;
+    font-size: 32px;
 }
 
 hr.line-separation {
@@ -418,4 +437,19 @@ footer {
     margin-bottom: 5px;
     box-sizing: content-box;
     background-color: rgba(216, 211, 211, 0.5);
+}
+
+/* media for Resposiveness*/
+
+/* If the screen size is 1200px wide or more */
+@media (min-width: 640px) {
+    .responsive-font-Name {
+        font-size: 20vw;
+    }
+}
+/* If the screen size is smaller than 1200px      */
+@media (max-width: 639.9px) {
+    .responsive-font-Name {
+        font-size: 30vw;
+    }
 }

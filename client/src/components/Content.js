@@ -79,9 +79,9 @@ export default function Content() {
                         id="date"
                     >
                         <p style={{ color: "white" }}>
-                            This is a SPA dynamic web page, built with Node.js &
-                            Express, using React & Bootstrap for the frontend.
-                            Code can be found{" "}
+                            This is a Single Page Application web page, built
+                            with Node.js & Express.js, using React & Bootstrap
+                            for the frontend. Code can be found{" "}
                             <a
                                 style={{ color: "white" }}
                                 target="_blank"

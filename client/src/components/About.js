@@ -65,11 +65,14 @@ export default function About() {
                 {" "}
                 <div className="col-md-4 profile-photo d-flex justify-content-center align-items-center">
                     <div>
-                        <img src="photo_profile.jpg" />
+                        <img
+                            style={{ maxHeight: "40vh" }}
+                            src="photo_profile.jpg"
+                        />
                     </div>
                 </div>
                 <div className="col-md-8 carousel-wrapper d-flex justify-content-center align-items-center">
-                    <div className="carousel d-flex flex-column justify-content-around align-items-center">
+                    <div className="carousel d-flex flex-column  align-items-center">
                         <ul
                             onAnimationEnd={handleAnimationEnd}
                             className={`${moveClass}`}

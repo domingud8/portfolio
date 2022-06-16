@@ -6,7 +6,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 export default function ProjectModal(props) {
-    const path = "icons8_skills/" + props.deploySite + ".png";
+    const path = props.deploySite + ".png";
     return (
         <Modal
             {...props}
@@ -16,16 +16,16 @@ export default function ProjectModal(props) {
         >
             <Modal.Header closeButton>
                 <Modal.Title
-                    style={{ color: "#3f0f64" }}
+                    style={{ color: "rgb(77, 3, 3)" }}
                     id="contained-modal-title-vcenter"
                 >
                     {props.title}
                 </Modal.Title>
             </Modal.Header>
-            <Modal.Body style={{ color: "#3f0f64", fontSize: "22px" }}>
+            <Modal.Body style={{ color: "rgb(77, 3, 3)", fontSize: "22px" }}>
                 <Container>
                     <Row>
-                        <Col xs={12} md={8}>
+                        <Col xs={12} md={7}>
                             <p> {props.extended} </p>
                             {props.features ? (
                                 <p>
@@ -53,11 +53,11 @@ export default function ProjectModal(props) {
                                 </a>
                             </Button>
                         </Col>
-                        <Col xs={6} md={4}>
+                        <Col xs={6} md={5}>
                             {props.technologies ? (
                                 <p>
                                     {" "}
-                                    <p>Libraries & Frameworks:</p>
+                                    <p>Technologies</p>
                                     <ul className="list-skills ">
                                         {props.technologies.map(
                                             (tech, index) => (
@@ -97,6 +97,9 @@ export default function ProjectModal(props) {
                                             <a
                                                 target="_blank"
                                                 href={props.projectUrl}
+                                                style={{
+                                                    color: "rgb(77, 3, 3)",
+                                                }}
                                             >
                                                 {" "}
                                                 link

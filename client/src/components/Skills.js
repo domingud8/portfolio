@@ -8,38 +8,24 @@ export default function Skills() {
                 <div className="d-flex justify-content-center">
                     <hr className="line-separation" />
                 </div>
-                <div>
+                <div style={{ marginBottom: "50px" }}>
                     <h2>Skills</h2>
                 </div>
-                <div className="container col-md-8">
+                <div className="container col-md-12">
                     <h1 className="text-borders">
                         <span className="heading">
-                            Short introduction to my technical skills: I have
-                            experience as{" "}
+                            Experience in{" "}
                             <span className="span-text">
-                                Full-Stack Software Developer
-                            </span>
-                            . I am capable of planning, designing, and
+                                {" "}
+                                Web Software Development{" "}
+                            </span>{" "}
+                            & <span className="span-text">
+                                {" "}
+                                Data Science{" "}
+                            </span>{" "}
+                            fields. <br /> I enjoy planning, designing, and
                             developing the frontend and the backend of modern
-                            web based applications. From the server side, i
-                            master terms like{" "}
-                            <span className="span-text">
-                                Single Page Applications (SPA),
-                            </span>{" "}
-                            <span className="span-text">REST APIs</span>, and{" "}
-                            <span className="span-text">
-                                databases management.
-                            </span>{" "}
-                            From the Cloud Computing side, i have beginner
-                            expertise level on{" "}
-                            <span className="span-text">AWS</span> technologies
-                            (currently devoting time learning deeper on it).
-                            Additionally, from my previous work experience, i
-                            have knowledge on the field of{" "}
-                            <span className="span-text">
-                                Data Science and AI{" "}
-                            </span>{" "}
-                            methodologies
+                            web based applications.
                         </span>
                     </h1>
                 </div>
