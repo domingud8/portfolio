@@ -28,6 +28,12 @@ export default function Navi({ activeLink, handleChangeLink }) {
             link: "#projects",
             id: "projects",
         },
+
+        {
+            name: "Contact",
+            link: "#contact",
+            id: "contact",
+        },
     ];
 
     function changeLinkActive(link) {

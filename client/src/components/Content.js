@@ -71,7 +71,7 @@ export default function Content() {
             <Experience />
             <Skills />
             <Projects />
-            <footer>
+            <footer id="contact">
                 <div className="container-fluid row">
                     <div
                         style={{ marginBottom: "30px" }}
