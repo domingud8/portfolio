@@ -152,6 +152,14 @@ nav ul li > .list-nav {
     .dots {
         bottom: 1vh !important;
     }
+    .ui button {
+        width: 50px !important;
+        height: 50px !important;
+    }
+    .dots li {
+        width: 15px !important;
+        height: 15px !important;
+    }
 }
 
 .card {
