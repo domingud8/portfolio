@@ -128,57 +128,6 @@ nav ul li > .list-nav {
     padding-left: 0;
     padding-top: 20px;
 }
-@media screen and (max-width: 600px) {
-    .carousel {
-        min-height: 50vh !important;
-        padding: 10px;
-        padding: 20px;
-    }
-    .card {
-        padding: 10px !important;
-        margin: 0 !important;
-        padding-top: 20px !important;
-        padding-bottom: 30px !important;
-    }
-    .card > p {
-        font-size: 4vw !important;
-    }
-    .job-title {
-        font-size: 4.5vw !important;
-    }
-    .ui {
-        bottom: 3vh !important;
-        width: 70% !important;
-    }
-    .dots {
-        bottom: 0.5vh !important;
-    }
-    .ui button {
-        width: 50px !important;
-        height: 50px !important;
-    }
-    .dots li {
-        width: 15px !important;
-        height: 15px !important;
-    }
-    .responsive-font-Name {
-        font-size: 3vw !important;
-    }
-    nav ul li > .list-nav {
-        font-size: 5.5vw !important;
-    }
-    nav ul li > .active-link {
-        font-size: 5.5vw !important;
-    }
-    nav ul li {
-        margin: 3px !important;
-        padding: 20px !important;
-    }
-    nav ul li > .on-link {
-        font-size: 5.6vw !important;
-        line-height: 1.2 !important;
-    }
-}
 
 .card {
     margin: 20px;
@@ -193,14 +142,14 @@ nav ul li > .list-nav {
 }
 
 .card > p {
-    font-size: 1.8vw;
+    font-size: 1.5vw;
     color: rgb(14, 14, 61);
 }
 
 .job-title {
     color: var(--main-color);
     font-weight: 600;
-    font-size: 2vw;
+    font-size: 1.8vw;
     padding-bottom: 20px;
 }
 .prev {
@@ -472,3 +421,55 @@ footer {
 }
 
 /* media for Resposiveness*/
+@media screen and (max-width: 600px) {
+    .carousel {
+        min-height: 50vh !important;
+        padding: 10px;
+        padding: 20px;
+    }
+    .card {
+        padding: 10px !important;
+        margin: 0 !important;
+        padding-top: 20px !important;
+        padding-bottom: 30px !important;
+        margin-bottom: 5px !important;
+    }
+    .card > p {
+        font-size: 4vw !important;
+    }
+    .job-title {
+        font-size: 4.5vw !important;
+    }
+    .ui {
+        bottom: 3vh !important;
+        width: 70% !important;
+    }
+    .dots {
+        bottom: 0.5vh !important;
+    }
+    .ui button {
+        width: 50px !important;
+        height: 50px !important;
+    }
+    .dots li {
+        width: 15px !important;
+        height: 15px !important;
+    }
+    .responsive-font-Name {
+        font-size: 5vw !important;
+    }
+    nav ul li > .list-nav {
+        font-size: 5.5vw !important;
+    }
+    nav ul li > .active-link {
+        font-size: 5.5vw !important;
+    }
+    nav ul li {
+        margin: 3px !important;
+        padding: 20px !important;
+    }
+    nav ul li > .on-link {
+        font-size: 5.6vw !important;
+        line-height: 1.2 !important;
+    }
+}
