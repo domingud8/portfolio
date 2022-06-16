@@ -146,6 +146,12 @@ nav ul li > .list-nav {
     .job-title {
         font-size: 4.5vw !important;
     }
+    .ui {
+        bottom: 3vh !important;
+    }
+    .dots {
+        bottom: 1vh !important;
+    }
 }
 
 .card {
