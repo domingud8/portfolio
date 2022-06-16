@@ -6,10 +6,6 @@ export default function Projects() {
     return (
         <div className="contentSection d-flex flex-column " id="projects">
             <div className="section-title d-flex flex-column justify-content-center">
-                <div className="d-flex justify-content-center">
-                    <hr className="line-separation" />
-                </div>
-
                 <h2 style={{ marginBottom: "50px" }}>Personal Projects</h2>
 
                 <div className="container-fluid d-flex flex-wrap ">

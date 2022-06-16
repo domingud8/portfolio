@@ -23,7 +23,7 @@ export default function SkillItem({ text, img_name }) {
                     img_name ? "" : "no-img"
                 }`}
             >
-                {text}
+                <p> {text}</p>
             </div>
         </div>
     );

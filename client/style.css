@@ -292,7 +292,7 @@ nav ul li > .list-nav {
 }
 
 .section-title {
-    margin-bottom: 50px !important;
+    margin-bottom: 10px !important;
 }
 
 .skill-item {
@@ -307,6 +307,11 @@ nav ul li > .list-nav {
     background-color: rgba(216, 211, 211, 0.5);
 }
 
+.skill-item p {
+    font-size: 18px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
 .list-skills {
     list-style: none;
     display: -webkit-box;
@@ -494,9 +499,28 @@ footer {
         font-size: 3.1vw;
     }
     .heading {
-        font-size: 3vw !important;
+        font-size: 3.5vw !important;
     }
     .span-text {
-        font-size: 3.2vw !important;
+        font-size: 3.6vw !important;
+    }
+    .skill-box {
+        font-size: 4vw !important;
+    }
+    .skill-box > p {
+        font-size: 4.5vw !important;
+    }
+    .skill-item {
+        padding: 8px !important;
+        padding-bottom: 2px !important;
+    }
+    .skill-item p {
+        font-size: 3vw !important;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .no-img {
+        padding-bottom: 2px !important;
+        padding-top: 2px !important;
     }
 }
