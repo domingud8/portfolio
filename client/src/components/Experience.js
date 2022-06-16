@@ -59,6 +59,7 @@ export default function Experience() {
                     <h2> Education</h2>
                     <div style={{ height: "60vh" }}>
                         <Chrono
+                            id="chrono"
                             items={eductation_data}
                             theme={{
                                 primary: "var(--main-color)",

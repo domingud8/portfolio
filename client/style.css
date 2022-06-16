@@ -478,4 +478,8 @@ footer {
         font-size: 5.6vw !important;
         line-height: 1.2 !important;
     }
+
+    .chrono p {
+        font-size: 2vw;
+    }
 }
