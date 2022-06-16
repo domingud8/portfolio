@@ -498,11 +498,15 @@ footer {
         font-weight: 500;
         font-size: 3.1vw;
     }
-    .heading {
-        font-size: 3.5vw !important;
+    .text-borders {
+        font-size: 2vw !important;
+        margin-bottom: 5vh !important;
+    }
+    .text-borders .heading {
+        font-size: 4vw !important;
     }
     .span-text {
-        font-size: 3.6vw !important;
+        font-size: 4.1vw !important;
     }
     .skill-box {
         font-size: 4vw !important;

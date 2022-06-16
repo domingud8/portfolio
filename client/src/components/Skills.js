@@ -5,10 +5,7 @@ export default function Skills() {
     return (
         <div className="contentSection d-flex flex-column " id="skills">
             <div className="section-title d-flex flex-column justify-content-center">
-                <div className="d-flex justify-content-center">
-                    <hr className="line-separation" />
-                </div>
-                <div style={{ marginBottom: "50px" }}>
+                <div style={{ marginTop: "50px", marginBottom: "50px" }}>
                     <h2>Skills</h2>
                 </div>
                 <div className="container col-md-12">
