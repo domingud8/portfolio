@@ -54,7 +54,7 @@ export default function Experience() {
                 <hr className="line-separation" />
             </div>
             <h2 style={{ marginBottom: "50px" }}>My Path</h2>
-            <div className="container row" style={{ marginBottom: "100px" }}>
+            <div className="container row">
                 <div className="col-md-6 chrono section-title d-flex flex-column justify-content-between">
                     <h2> Education</h2>
                     <div style={{ height: "60vh" }}>
