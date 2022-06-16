@@ -480,6 +480,17 @@ footer {
     }
 
     .chrono p {
-        font-size: 2vw;
+        font-size: 3vw !important;
+        line-height: 1.5rem;
+    }
+    .chronoPersonalised {
+        font-size: 3vw !important;
+    }
+    .list-phd-actions li {
+        font-size: 3vw !important;
+    }
+    .span-text1 {
+        font-weight: 500;
+        font-size: 3.1vw;
     }
 }

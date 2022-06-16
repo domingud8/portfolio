@@ -59,7 +59,6 @@ export default function Experience() {
                     <h2> Education</h2>
                     <div style={{ height: "60vh" }}>
                         <Chrono
-                            id="chrono"
                             items={eductation_data}
                             theme={{
                                 primary: "var(--main-color)",
@@ -76,7 +75,10 @@ export default function Experience() {
                 <div className="col-md-6 chrono section-title d-flex flex-column justify-content-between ">
                     <h2> Work Experience </h2>
 
-                    <div style={{ fontSize: "22px", height: "60vh" }}>
+                    <div
+                        className="chronoPersonalised"
+                        style={{ fontSize: "22px", height: "60vh" }}
+                    >
                         <Chrono
                             items={items}
                             theme={{
