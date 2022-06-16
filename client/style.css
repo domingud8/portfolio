@@ -148,9 +148,10 @@ nav ul li > .list-nav {
     }
     .ui {
         bottom: 3vh !important;
+        width: 70% !important;
     }
     .dots {
-        bottom: 1vh !important;
+        bottom: 0.5vh !important;
     }
     .ui button {
         width: 50px !important;
@@ -159,6 +160,23 @@ nav ul li > .list-nav {
     .dots li {
         width: 15px !important;
         height: 15px !important;
+    }
+    .responsive-font-Name {
+        font-size: 3vw !important;
+    }
+    nav ul li > .list-nav {
+        font-size: 5.5vw !important;
+    }
+    nav ul li > .active-link {
+        font-size: 5.5vw !important;
+    }
+    nav ul li {
+        margin: 3px !important;
+        padding: 20px !important;
+    }
+    nav ul li > .on-link {
+        font-size: 5.6vw !important;
+        line-height: 1.2 !important;
     }
 }
 
@@ -454,16 +472,3 @@ footer {
 }
 
 /* media for Resposiveness*/
-
-/* If the screen size is 1200px wide or more */
-@media (min-width: 640px) {
-    .responsive-font-Name {
-        font-size: 20vw;
-    }
-}
-/* If the screen size is smaller than 1200px      */
-@media (max-width: 639.9px) {
-    .responsive-font-Name {
-        font-size: 30vw;
-    }
-}
