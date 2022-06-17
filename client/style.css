@@ -575,5 +575,6 @@ footer {
     #contact form {
         margin: 0 !important;
         padding: 0 !important;
+        font-size: 4vw !important;
     }
 }
