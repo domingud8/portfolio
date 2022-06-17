@@ -20,7 +20,7 @@ export default function SkillItem({ text, img_name }) {
             </div>
             <div
                 className={`d-flex align-items-center  ${
-                    img_name ? "" : "no-img"
+                    img_name ? "with-img" : "no-img"
                 }`}
             >
                 <p> {text}</p>
