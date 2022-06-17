@@ -91,7 +91,7 @@ export default function Content() {
                             </a>
                             .{" "}
                         </p>
-                        <p style={{ color: "white" }}> {dateString}</p>
+                        <p style={{ color: "white" }}> Today: {dateString}</p>
                     </div>
                     <div style={{ marginBottom: "50px" }} className="col-md-6">
                         <ContactForm />{" "}
