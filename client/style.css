@@ -545,7 +545,7 @@ footer {
         margin-right: 10px !important;
         margin-left: 10px !important;
         height: auto !important;
-        max-width: 100vh !important;
+        max-height: 100vh !important;
         width: 100vw !important;
         font-size: 4vw !important;
     }
