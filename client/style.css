@@ -91,11 +91,10 @@ nav ul li > .list-nav {
     padding-right: 0;
 }
 #date {
-    color: rgb(14, 14, 61);
-    font-size: 22px;
+    font-size: 1.3vw;
     line-height: 1.5;
     cursor: pointer;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .profile-photo img {
@@ -558,5 +557,8 @@ footer {
         -webkit-flex-wrap: wrap !important;
         -ms-flex-wrap: wrap !important;
         flex-wrap: wrap !important;
+    }
+    #date {
+        font-size: 4vw !important;
     }
 }
