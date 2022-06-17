@@ -94,7 +94,6 @@ export default function Content() {
                         <p style={{ color: "white" }}> {dateString}</p>
                     </div>
                     <div style={{ marginBottom: "50px" }} className="col-md-6">
-                        {" "}
                         <ContactForm />{" "}
                     </div>
                     <div

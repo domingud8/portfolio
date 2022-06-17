@@ -546,6 +546,7 @@ footer {
         margin-left: 10px !important;
         height: auto !important;
         width: 100vw !important;
+        font-size: 4vw !important;
     }
     .modal-projects p {
         font-size: 3.5vw !important;
@@ -560,5 +561,18 @@ footer {
     }
     #date {
         font-size: 4vw !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    #contact {
+        margin: 0 !important;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+    }
+    #contact form {
+        margin: 0 !important;
+        padding: 0 !important;
     }
 }
