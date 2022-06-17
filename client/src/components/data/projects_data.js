@@ -26,9 +26,9 @@ const projects = [
         title: "Twitter API ",
         description:
             "Backend API getting data (latest news)from Twitter. Next step: use data in the frontend to built a dashboard ",
-        github: "https://github.com/domingud8/FinanceDashboard",
+        github: "https://github.com/domingud8/TwitterAPI",
         extended:
-            "This portfolio dynamic website. API routes done with Node.js, while the frontend using React framework.",
+            "Backend API getting data (latest news)from Twitter. Next step: use data in the frontend to built a dashboard",
         image: "twitterApi.jpg",
         projectUrl: "https://",
         technologies: ["AJAX", "vanilla Javascript"],
@@ -37,8 +37,7 @@ const projects = [
         title: "Yahoo Finance",
         description: "RestAPI getting data from Yahoo Finance  ",
         github: "https://github.com/domingud8/FinanceDashboard",
-        extended:
-            "This portfolio dynamic website. API routes done with Node.js, while the frontend using React framework.",
+        extended: "RestAPI getting data from Yahoo Finance",
         image: "yahooFinace.png",
         projectUrl: "https://",
         technologies: ["AJAX", "vanilla Javascript"],
