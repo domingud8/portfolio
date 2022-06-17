@@ -41,10 +41,8 @@ export default function Contact() {
             onSubmit={handleSubmit}
             style={{ color: "white", fontSize: "22px" }}
         >
-            <div style={{ paddingBottom: "20px" }} className="form-group">
-                <label style={{ paddingBottom: "10px" }}>Contact Me?</label>{" "}
-                <br />
-                <label style={{ paddingBottom: "10px" }}>Name</label>
+            <div style={{ paddingBottom: "20px" }} className="form-group ">
+                <label>Name</label>
                 <input
                     className="form-control"
                     id="name"
