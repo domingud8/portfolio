@@ -27,7 +27,7 @@ export default function ProjectCard({
 
             <div className="mb-6">
                 <a
-                    style={{ color: "black" }}
+                    style={{ color: "rgb(77, 3, 3)" }}
                     target="_blank"
                     rel="noreferrer"
                     href={projectUrl}

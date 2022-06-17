@@ -262,45 +262,47 @@ export default function Skills() {
                     </div>
                 </div>
             </div>
-            <div className=" container-fluid row justify-content-center ">
-                {" "}
-                <div className="col-md-5 skill-box box ">
+            <div className="d-flex justify-content-center">
+                <div className=" container-fluid row justify-content-center ">
                     {" "}
-                    <p
-                        style={{
-                            fontSize: "28px",
-                            fontWeight: "500",
-                        }}
-                    >
-                        Softwares and Technologies
-                    </p>
-                    <div className="d-flex justify-content-around">
-                        <ul className="list-skills ">
-                            <li>
-                                <SkillItem
-                                    img_name={"linux"}
-                                    text={"Linux, bash, shell"}
-                                />
-                            </li>
-                            <li>
-                                {" "}
-                                <SkillItem
-                                    img_name={"github"}
-                                    text={"Github"}
-                                />
-                            </li>
-                            <li>
-                                {" "}
-                                <SkillItem img_name={"aws"} text={"AWS"} />
-                            </li>
-                            <li>
-                                {" "}
-                                <SkillItem
-                                    img_name={"heroku"}
-                                    text={"Heroku"}
-                                />
-                            </li>
-                        </ul>
+                    <div className="col-md-5 skill-box box ">
+                        {" "}
+                        <p
+                            style={{
+                                fontSize: "28px",
+                                fontWeight: "500",
+                            }}
+                        >
+                            Softwares and Technologies
+                        </p>
+                        <div className="d-flex justify-content-around">
+                            <ul className="list-skills ">
+                                <li>
+                                    <SkillItem
+                                        img_name={"linux"}
+                                        text={"Linux, bash, shell"}
+                                    />
+                                </li>
+                                <li>
+                                    {" "}
+                                    <SkillItem
+                                        img_name={"github"}
+                                        text={"Github"}
+                                    />
+                                </li>
+                                <li>
+                                    {" "}
+                                    <SkillItem img_name={"aws"} text={"AWS"} />
+                                </li>
+                                <li>
+                                    {" "}
+                                    <SkillItem
+                                        img_name={"heroku"}
+                                        text={"Heroku"}
+                                    />
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

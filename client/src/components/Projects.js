@@ -10,11 +10,7 @@ export default function Projects() {
 
                 <div className="container-fluid d-flex flex-wrap ">
                     {projects.map((project, index) => (
-                        <div
-                            style={{ marginRight: "70px", marginLeft: "70px" }}
-                            className="col-md-3 project-card"
-                            key={index}
-                        >
+                        <div className="col-md-3 project-card" key={index}>
                             <ProjectCard {...project} />
                         </div>
                     ))}

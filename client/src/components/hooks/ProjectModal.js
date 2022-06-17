@@ -13,6 +13,7 @@ export default function ProjectModal(props) {
             size="lg"
             aria-labelledby="example-modal-sizes-title-lg"
             centered
+            className="modal-projects"
         >
             <Modal.Header closeButton>
                 <Modal.Title
@@ -42,7 +43,11 @@ export default function ProjectModal(props) {
                             ) : (
                                 ""
                             )}
-                            <Button type="button" className="btn btn-primary ">
+                            <Button
+                                style={{ marginBottom: "20px" }}
+                                type="button"
+                                className="btn btn-primary "
+                            >
                                 <a
                                     className="btn btn-primary"
                                     href={props.github}
@@ -53,11 +58,11 @@ export default function ProjectModal(props) {
                                 </a>
                             </Button>
                         </Col>
-                        <Col xs={6} md={5}>
+                        <Col xs={12} md={5}>
                             {props.technologies ? (
                                 <p>
                                     {" "}
-                                    <p>Technologies</p>
+                                    <p>Technologies:</p>
                                     <ul className="list-skills ">
                                         {props.technologies.map(
                                             (tech, index) => (
@@ -76,7 +81,7 @@ export default function ProjectModal(props) {
                                 ""
                             )}
                             {props.deploySite ? (
-                                <div>
+                                <div className="d-flex flex-column justify-content-start">
                                     <p>Deployed on:</p>{" "}
                                     <div className="feature-item  d-flex flex-row justify-content-center align-items-center">
                                         <div>
@@ -92,8 +97,7 @@ export default function ProjectModal(props) {
                                             />
                                         </div>
                                         <div>
-                                            {props.deploySite}
-
+                                            {props.deploySite}{" "}
                                             <a
                                                 target="_blank"
                                                 href={props.projectUrl}
@@ -101,7 +105,6 @@ export default function ProjectModal(props) {
                                                     color: "rgb(77, 3, 3)",
                                                 }}
                                             >
-                                                {" "}
                                                 link
                                             </a>
                                         </div>
